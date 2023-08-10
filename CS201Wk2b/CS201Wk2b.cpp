@@ -32,4 +32,16 @@ int main()
 	//example2(ages);
 	//example3(values, row, col);
 
+	int myInt;
+	int* myTip;
+	int myVar;
+	int* myBill = &myInt;
+
+	myInt = 10;
+	myTip = &myInt;
+	myVar = *myBill;
+	myVar += *myTip + 10.5;
+
+	cout << myVar << endl;
+
 }
